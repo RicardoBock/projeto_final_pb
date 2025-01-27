@@ -12,6 +12,9 @@ Realizar o projeto de modernização de um sistema de servidores locais para o a
 ## Tecnologias utilizadas
 Diversas ferramentas que a AWS disponibiliza foram utilizadas nesta atividade, aqui estão elas listadas:
 
+
+<img src="imgs/MGN.png" alt="Logo MGN" />
+
 * AWS MGN - O MGN (Application Migration Service) é um serviço altamente automatizado de lift-and-shift (as-is), no qual permite a migração de servidores físicos, virtuais ou em nuvem, sem problemas de compatibilidade. - Documentação: https://docs.aws.amazon.com/pt_br/mgn/latest/ug/what-is-application-migration-service.html
 * AWS DMS - O DMS (Database Migration Service) é um serviço que auxilia na mobilidade de banco de dados para a nuvem AWS. - Documentação: https://docs.aws.amazon.com/pt_br/prescriptive-guidance/latest/migration-databases-postgresql-ec2/aws-database-migration-service.html
 * AWS S3 - O Amazon S3 (Simple Storage Service) é um serviço de armazenamento de objetos que oferece escalabilidade, utilizado neste caso para backup dos sistemas. - Documentação: https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/Welcome.html
