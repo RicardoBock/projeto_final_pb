@@ -12,9 +12,6 @@ Realizar o projeto de modernização de um sistema de servidores locais para o a
 ## Tecnologias utilizadas
 Diversas ferramentas que a AWS disponibiliza foram utilizadas nesta atividade, aqui estão elas listadas:
 
-
-<img src="imgs/MGN.png" alt="Logo MGN" />
-
 * AWS MGN - O MGN (Application Migration Service) é um serviço altamente automatizado de lift-and-shift (as-is), no qual permite a migração de servidores físicos, virtuais ou em nuvem, sem problemas de compatibilidade. - Documentação: https://docs.aws.amazon.com/pt_br/mgn/latest/ug/what-is-application-migration-service.html
 * AWS DMS - O DMS (Database Migration Service) é um serviço que auxilia na mobilidade de banco de dados para a nuvem AWS. - Documentação: https://docs.aws.amazon.com/pt_br/prescriptive-guidance/latest/migration-databases-postgresql-ec2/aws-database-migration-service.html
 * AWS S3 - O Amazon S3 (Simple Storage Service) é um serviço de armazenamento de objetos que oferece escalabilidade, utilizado neste caso para backup dos sistemas. - Documentação: https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/Welcome.html
@@ -22,3 +19,5 @@ Diversas ferramentas que a AWS disponibiliza foram utilizadas nesta atividade, a
 * AWS RDS - O Amazon RDS (Relational Database Service) é um serviço de banco de dados relacional de fácil gerenciamento e otimizado para o custo total da propriedade, utilizado neste caso para armazenar o servidor dedicado ao MySQL. - Documentação: https://docs.aws.amazon.com/pt_br/rds/?nc2=h_ql_doc_rds
 * AWS IAM - O Amazon IAM (Identity and Access Management) é um serviço de gerenciamento de acessos da força de trabalho, sendo possível definir barreiras e permissões de diferentes colaboradores do projeto, utilizado como uma das medidas protetivas do projeto - Documentação: https://docs.aws.amazon.com/pt_br/IAM/latest/UserGuide/introduction.html
 * AWS EBS - O Amazon EBS (Elastic Block Store) é um serviço que oferece recursos de armazenamento em blocos escaláveis, utilizado para armazenar os documentos e configurações do EC2. - Documentação: https://docs.aws.amazon.com/pt_br/ebs/latest/userguide/what-is-ebs.html
+* AWS Route 53 - O Amazon Route 53 é um serviço web de Sistema de Nomes de Domínio (DNS) altamente disponível e escalável.
+* AWS WAF - O Amazon WAF é um firewall de aplicativo web que permite monitorar os pedidos HTTP e HTTPS que são encaminhados para os recursos protegidos do aplicativo web. 
