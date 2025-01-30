@@ -36,10 +36,12 @@ Diversas ferramentas que a AWS disponibiliza foram utilizadas nesta atividade, a
 ## ETAPA 1
 
 ### Diagrama da infraestrutura e cálculo do custo:
+#### Diagrama
 A primeira etapa do projeto consiste em realizar uma migração de 3 servidores locais de uma empresa, utilizando do Application Migration Service (AWS MGN) para os responsáveis pelo Back-end e Front-End é possível realizar a migração destes servidores e por meio do DataBase Migration Service é possível realizar a migração do banco de dados MySQL, o backup dos dados e arquivos é realizado pelo AWS S3
 
 A Arquitetura para a migração destes servidores locais é feita da seguinte forma:
-<src img="imgs/arquitetura_migracao.png" alt="Diagrama de transição" />
+
+![Arquitetura de Imigração](imgs/arquitetura_migracao.png)
 
 __ÁREA DE PREPARAÇÃO__ 
 A área de preparação do AWS Application Migration Service (MGN) é onde o agente de replicação da AWS é instalado nos servidores de origem. Durante a instalação, é possível definir parâmetros de replicação e configurações para gerenciar a preparação da área. 
@@ -47,12 +49,20 @@ A área de preparação do AWS Application Migration Service (MGN) é onde o age
 __ÁREA DE TESTES/TRANSIÇÃO__
 A Área de teste e preparação são necessárias para alterar ou reparar erros observados pelo sistema e preparar o sistema para uso.
 
+#### Cálculos
+A primeira etapa foi calculada utilizando da AWS A
 
 ## ETAPA 2 
 
+### Diagrama da infraestrutura e cálculo do custo:
+#### Diagrama
 A segunda etapa do projeto é realizado a modernização do sistema e a utilização de kubernetes para gerenciamento de containers, no qual os elementos de __Front end__ e __Back end__ vão estar configurados. A utilização do _Kubernetes_ ou K8s possui diversos benefícios como uma maior orquestração dos conteiners, caso necessário alguma modificação, otimização dos recursos, autocorreção, automatização e a segurança da informação. Por meio do _Terraform_ é possível gerenciar infraestruturas e criar algo próximo do diagrama criado:
 
-<src img="imgs/diagrama_k8s.png" alt="Diagrama de transição"/>
+![Arquitetura utilizando kubernetes](imgs/diagrama_k8s.png)
+
+É possível realizar que no diagrama temos a parte dos desenvolvedores contribuindo para a construção da infraestrutura e suas atualizações por meio do GitHub Actions e Terraform, criando imagens e armazenando no _Amazon Elastic Container Registry_ e assim atualizando o EKS, em que uma área exclusiva de testes e homologação dentro da infraestrutura é AWS. A parte em que o cliente recebe por email os custos e relatórios diários da estrutura AWS e a parte em que o usuário acessa a aplicação.
+
+#### Cálculos
 
 
 
