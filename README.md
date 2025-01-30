@@ -39,7 +39,7 @@ Diversas ferramentas que a AWS disponibiliza foram utilizadas nesta atividade, a
 A primeira etapa do projeto consiste em realizar uma migração de 3 servidores locais de uma empresa, utilizando do Application Migration Service (AWS MGN) para os responsáveis pelo Back-end e Front-End é possível realizar a migração destes servidores e por meio do DataBase Migration Service é possível realizar a migração do banco de dados MySQL, o backup dos dados e arquivos é realizado pelo AWS S3
 
 A Arquitetura para a migração destes servidores locais é feita da seguinte forma:
-<src img="./imgs/arquitetura_migracao.jpg">
+<src img="imgs/arquitetura_migracao.png" alt="Diagrama de transição" />
 
 __ÁREA DE PREPARAÇÃO__ 
 A área de preparação do AWS Application Migration Service (MGN) é onde o agente de replicação da AWS é instalado nos servidores de origem. Durante a instalação, é possível definir parâmetros de replicação e configurações para gerenciar a preparação da área. 
@@ -52,7 +52,7 @@ A Área de teste e preparação são necessárias para alterar ou reparar erros 
 
 A segunda etapa do projeto é realizado a modernização do sistema e a utilização de kubernetes para gerenciamento de containers, no qual os elementos de __Front end__ e __Back end__ vão estar configurados. A utilização do _Kubernetes_ ou K8s possui diversos benefícios como uma maior orquestração dos conteiners, caso necessário alguma modificação, otimização dos recursos, autocorreção, automatização e a segurança da informação. Por meio do _Terraform_ é possível gerenciar infraestruturas e criar algo próximo do diagrama criado:
 
-<src img="./imgs/arquitetura_k8s.jpg">
+<src img="imgs/diagrama_k8s.png" alt="Diagrama de transição"/>
 
 
 
