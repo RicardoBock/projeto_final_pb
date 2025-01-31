@@ -50,7 +50,11 @@ __ÁREA DE TESTES/TRANSIÇÃO__
 A Área de teste e preparação são necessárias para alterar ou reparar erros observados pelo sistema e preparar o sistema para uso.
 
 #### Cálculos
-A primeira etapa foi calculada utilizando da AWS A
+A precificação foi calculada utilizando a **AWS Pricing Calculator** e os custos foram ajustados para refletir a infraestrutura modernizada.
+
+![Estimativa](imgs/Estimativa1.png)
+
+Para mais detalhes acesse o arquivo com o [resumo das estimativas](EstimativaAWS.pdf) 
 
 ## ETAPA 2 
 
@@ -62,7 +66,14 @@ A segunda etapa do projeto é realizado a modernização do sistema e a utiliza�
 
 É possível realizar que no diagrama temos a parte dos desenvolvedores contribuindo para a construção da infraestrutura e suas atualizações por meio do GitHub Actions e Terraform, criando imagens e armazenando no _Amazon Elastic Container Registry_ e assim atualizando o EKS, em que uma área exclusiva de testes e homologação dentro da infraestrutura é AWS. A parte em que o cliente recebe por email os custos e relatórios diários da estrutura AWS e a parte em que o usuário acessa a aplicação.
 
-#### Cálculos
+### Cálculos
+![Estimativa](imgs/Estimativa2.png)
+
+Para mais detalhes acesse o arquivo com o [resumo das estimativas](Estimativamodernização.pdf)
+
+## Conclusão
+
+O projeto de migração e modernização da infraestrutura de servidores locais para a AWS foi concluído com sucesso, garantindo escalabilidade, segurança e automação.
 
 
 
